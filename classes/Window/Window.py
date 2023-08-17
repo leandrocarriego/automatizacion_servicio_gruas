@@ -1,6 +1,5 @@
 import tkinter as tk
 from tkinter import ttk 
-import webbrowser
 from classes.Hilo.Hilo import *
 
 class Window() :
@@ -11,7 +10,7 @@ class Window() :
         
     def start_window(self) :
         # Window
-        self.window.title('Bot servicios de gruas')
+        self.window.title('Buscador de servicios')
         self.window.geometry('550x270')
         
         # Frames
@@ -37,18 +36,12 @@ class Window() :
         restart_button = ttk.Button(master= buttons_frame, text= 'Reiniciar', command= self.thread.restart)
         stop_button = ttk.Button(master= buttons_frame, text= 'Finalizar', command= self.stop_window)
         state_label = ttk.Label(master= state_frame, text= '', textvariable= self.text_var)
-        autor_label = ttk.Label(master= autor_frame, text= 'Desarrollado por')
-        link = ttk.Label(master= autor_frame, text='MENDRI', foreground= 'red', cursor='hand2')
-        link.bind('<Button-1>', lambda e: webbrowser.open_new('https://mendri.com.ar/'))
         
         title_label.pack(expand= True, fill= 'y')
         start_button.pack(side= 'left', expand= True)
         restart_button.pack(side= 'left', expand= True)
         stop_button.pack(side= 'left', expand= True)
         state_label.pack(expand= True)
-        autor_label.pack(side= 'left', expand= True)
-        link.pack(side= 'left', expand= True)
-        
         
         self.window.mainloop()
     
