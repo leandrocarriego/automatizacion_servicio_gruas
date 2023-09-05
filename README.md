@@ -21,7 +21,7 @@ Sigue los siguientes pasos para clonar y ejecutar este proyecto en tu entorno lo
    Abre tu terminal (o línea de comandos) y ejecuta el siguiente comando para clonar el proyecto desde GitHub:
 
    ```bash data-copyable
-    git clone https://github.com/leandrocarriego/automatizacion_servicio_gruas.git
+    git clone https://github.com/leandrocarriego/automatizacion_servicios.git
    
 2. **Instalar dependencias:**
     
