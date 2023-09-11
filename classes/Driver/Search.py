@@ -1,16 +1,16 @@
+import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import time
+
 
 
 class Search():
-    def __init__(self, driver, state_text):
+    def __init__(self, driver, state_text) -> None:
         self.driver = driver
         self.search = True
         self.state_text = state_text
         
-    def start_search(self):
         while self.search:
             try:
                 self.state_text('Buscando nuevo servicio...')
@@ -23,7 +23,7 @@ class Search():
             except :
                 pass
                 
-    def stop_search(self) :
+    def stop_search(self) -> None:
         self.search = False
 
     
