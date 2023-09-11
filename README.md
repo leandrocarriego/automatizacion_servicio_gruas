@@ -1,5 +1,7 @@
 # Automatización 
-## Python-Selenium
+## Python-Selenium 
+
+![Captura de pantalla](botservicios.png)
 
 Este proyecto de automatización fue realizado para un cliente de manera freelance, abre una web especifica, realiza login y espera que se soliciten servicios, si llega un servicio de interes para el cliente lo toma automaticamente.
 
